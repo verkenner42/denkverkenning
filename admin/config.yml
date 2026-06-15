@@ -1,0 +1,86 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: nl
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "content"
+    label: "Website inhoud"
+    files:
+      - name: "site"
+        label: "Alle teksten"
+        file: "_data/site.json"
+        format: json
+        fields:
+
+          - label: "Hero (bovenste sectie)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Klein label", name: "label", widget: "string", hint: "Bijv. 'Filosofische praktijk · Amsterdam'"}
+              - {label: "Kop — regel 1", name: "h1_regel1", widget: "string"}
+              - {label: "Kop — regel 2 (cursief)", name: "h1_regel2", widget: "string"}
+              - {label: "Subtekst", name: "subtekst", widget: "text"}
+              - {label: "Quote (rechts)", name: "quote", widget: "text"}
+
+          - label: "Over"
+            name: "over"
+            widget: "object"
+            fields:
+              - {label: "Kop — voor cursief deel", name: "kop_deel1", widget: "string", hint: "Bijv. 'Filosofie die'"}
+              - {label: "Kop — cursief deel", name: "kop_deel2", widget: "string", hint: "Bijv. 'wrijft'"}
+              - {label: "Kop — na cursief deel", name: "kop_deel3", widget: "string", hint: "Bijv. ', niet streelt'"}
+              - {label: "Alinea 1", name: "tekst1", widget: "text"}
+              - {label: "Alinea 2", name: "tekst2", widget: "text"}
+
+          - label: "Dienst 1"
+            name: "dienst1"
+            widget: "object"
+            fields:
+              - {label: "Titel", name: "titel", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+
+          - label: "Dienst 2"
+            name: "dienst2"
+            widget: "object"
+            fields:
+              - {label: "Titel", name: "titel", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+
+          - label: "Werkwijze"
+            name: "werkwijze"
+            widget: "object"
+            fields:
+              - {label: "Kop — voor cursief deel", name: "kop_deel1", widget: "string"}
+              - {label: "Kop — cursief deel", name: "kop_deel2", widget: "string"}
+              - {label: "Kop — na cursief deel", name: "kop_deel3", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+              - label: "Kenmerken"
+                name: "kenmerken"
+                widget: "list"
+                summary: "{{fields.titel}}"
+                fields:
+                  - {label: "Titel", name: "titel", widget: "string"}
+                  - {label: "Beschrijving", name: "beschrijving", widget: "text"}
+
+          - label: "Voor wie"
+            name: "voor_wie"
+            widget: "object"
+            fields:
+              - {label: "Kop — voor cursief deel", name: "kop_deel1", widget: "string"}
+              - {label: "Kop — cursief deel", name: "kop_deel2", widget: "string"}
+              - {label: "Kop — na cursief deel", name: "kop_deel3", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Kop — regel 1", name: "kop_deel1", widget: "string"}
+              - {label: "Kop — regel 2 (cursief)", name: "kop_deel2", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+              - {label: "E-mailadres", name: "email", widget: "string"}
