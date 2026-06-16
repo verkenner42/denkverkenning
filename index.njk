@@ -104,7 +104,7 @@ permalink: /index.html
       letter-spacing: -0.02em;
     }
 
-    h1 em { font-style: italic; color: var(--moss); }
+    h1 em { font-style: italic; color: var(--moss); white-space: nowrap; }
 
     .hero-sub {
       margin-top: 2.5rem;
@@ -393,7 +393,7 @@ permalink: /index.html
       margin-bottom: 1.5rem;
     }
 
-    .contact-left h2 em { font-style: italic; color: var(--moss); }
+    .contact-left h2 em { font-style: italic; color: var(--moss); white-space: nowrap; }
 
     .contact-left p { color: var(--warm-gray); font-size: 1.05rem; max-width: 40ch; }
 
@@ -511,7 +511,7 @@ permalink: /index.html
     <div class="hero-inner">
       <div class="hero-left">
         <p class="hero-label">{{ site.hero.label }}</p>
-        <h1>{{ site.hero.h1_regel1 }}<br><em>{{ site.hero.h1_regel2 }}</em></h1>
+        <h1>{{ site.hero.h1_regel1 }} <em>{{ site.hero.h1_regel2 }}</em></h1>
         <p class="hero-sub">{{ site.hero.subtekst }}</p>
         <a href="#diensten" class="hero-cta">Bekijk de mogelijkheden</a>
       </div>
@@ -605,7 +605,7 @@ permalink: /index.html
   <!-- VOOR WIE -->
   <section id="voor-wie">
     <p class="section-label">Voor wie</p>
-    <h2>{{ site.voor_wie.kop_deel1 }} <em>{{ site.voor_wie.kop_deel2 }}</em><br>{{ site.voor_wie.kop_deel3 }}</h2>
+    <h2>{{ site.voor_wie.kop_deel1 }} <em>{{ site.voor_wie.kop_deel2 }}</em> {{ site.voor_wie.kop_deel3 }}</h2>
     <p>{{ site.voor_wie.tekst }}</p>
   </section>
 
@@ -613,7 +613,7 @@ permalink: /index.html
   <section id="contact">
     <div class="contact-left">
       <p class="section-label">Contact</p>
-      <h2>{{ site.contact.kop_deel1 }}<br><em>{{ site.contact.kop_deel2 }}</em></h2>
+      <h2>{{ site.contact.kop_deel1 }} <em>{{ site.contact.kop_deel2 }}</em></h2>
       <p>{{ site.contact.tekst }}</p>
     </div>
     <form name="contact" class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
