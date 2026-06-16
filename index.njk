@@ -70,25 +70,23 @@ permalink: /index.html
     /* ── HERO ── */
     #hero {
       min-height: 100vh;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      align-items: end;
+      display: flex;
+      align-items: flex-end;
       padding: 0 4rem 5rem;
       position: relative;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 3rem;
+      align-items: end;
     }
 
-    #hero::before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0;
-      width: 42%;
-      height: 100%;
-      background: var(--light-moss);
-      z-index: 0;
-    }
-
-    .hero-left { position: relative; z-index: 1; padding-top: 10rem; }
+    .hero-left { padding-top: 10rem; }
 
     .hero-label {
       font-family: 'DM Mono', monospace;
@@ -133,22 +131,31 @@ permalink: /index.html
     .hero-cta:hover { opacity: 0.6; }
 
     .hero-right {
-      position: relative;
-      z-index: 1;
-      padding-bottom: 1rem;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+    }
+
+    .hero-panel {
+      background: var(--light-moss);
+      padding: 2.5rem 2.5rem 2rem;
+    }
+
+    .chairs-illustration {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
     }
 
     .hero-quote {
       font-size: 1.05rem;
       font-style: italic;
       color: var(--moss);
-      max-width: 30ch;
+      max-width: 32ch;
       border-left: 2px solid var(--terracotta);
       padding-left: 1.5rem;
-      margin-left: auto;
+      margin: 0;
     }
 
     .scroll-hint {
@@ -456,10 +463,10 @@ permalink: /index.html
       nav { padding: 1.2rem 2rem; }
       nav ul { gap: 1.5rem; }
 
-      #hero { grid-template-columns: 1fr; padding: 0 2rem 4rem; min-height: 100svh; }
-      #hero::before { display: none; }
+      #hero { padding: 0 2rem 4rem; min-height: 100svh; }
+      .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
       .hero-left { padding-top: 8rem; }
-      .hero-right { display: none; }
+      .hero-panel { padding: 1.75rem; }
 
       #over, #contact { grid-template-columns: 1fr; padding: 5rem 2rem; gap: 3rem; }
       .diensten-grid { grid-template-columns: 1fr; }
@@ -485,14 +492,39 @@ permalink: /index.html
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-left">
-      <p class="hero-label">{{ site.hero.label }}</p>
-      <h1>{{ site.hero.h1_regel1 }}<br><em>{{ site.hero.h1_regel2 }}</em></h1>
-      <p class="hero-sub">{{ site.hero.subtekst }}</p>
-      <a href="#diensten" class="hero-cta">Bekijk de mogelijkheden</a>
-    </div>
-    <div class="hero-right">
-      <blockquote class="hero-quote">{{ site.hero.quote }}</blockquote>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="hero-label">{{ site.hero.label }}</p>
+        <h1>{{ site.hero.h1_regel1 }}<br><em>{{ site.hero.h1_regel2 }}</em></h1>
+        <p class="hero-sub">{{ site.hero.subtekst }}</p>
+        <a href="#diensten" class="hero-cta">Bekijk de mogelijkheden</a>
+      </div>
+      <div class="hero-right">
+        <div class="hero-panel">
+          <svg class="chairs-illustration" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+            <line x1="10" y1="195" x2="390" y2="195" stroke="#a05c3f" stroke-width="1" stroke-dasharray="2 6" opacity="0.5"/>
+            <g stroke="#4a5240" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M75 60 L75 140"/>
+              <path d="M75 60 L108 60"/>
+              <path d="M75 95 L100 95 L100 140"/>
+              <path d="M75 140 L140 140"/>
+              <path d="M75 140 L75 195"/>
+              <path d="M125 140 L125 195"/>
+              <path d="M140 140 L140 195"/>
+            </g>
+            <g stroke="#4a5240" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" transform="translate(400,0) scale(-1,1)">
+              <path d="M75 60 L75 140"/>
+              <path d="M75 60 L108 60"/>
+              <path d="M75 95 L100 95 L100 140"/>
+              <path d="M75 140 L140 140"/>
+              <path d="M75 140 L75 195"/>
+              <path d="M125 140 L125 195"/>
+              <path d="M140 140 L140 195"/>
+            </g>
+          </svg>
+          <blockquote class="hero-quote">{{ site.hero.quote }}</blockquote>
+        </div>
+      </div>
     </div>
     <span class="scroll-hint">Scroll</span>
   </section>
