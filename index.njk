@@ -634,7 +634,7 @@ permalink: /index.html
         <textarea id="bericht" name="bericht" placeholder="Waar denk je over na?"></textarea>
       </div>
       <button type="submit" class="submit-btn">Verstuur</button>
-      <p class="contact-error" id="contactError" style="display:none;">Er ging iets mis bij het versturen. Mail rechtstreeks naar <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>.</p>
+      <p class="contact-error" id="contactError" style="display:none;">Er ging iets mis bij het versturen. Mail rechtstreeks naar <a href="#" class="obfuscated-email" data-email-rev="{{ site.contact.email | reverse }}">e-mail</a>.</p>
     </form>
     <p class="contact-success" id="contactSuccess" style="display:none;">Bedankt — je bericht is verstuurd. Ik reageer zo snel mogelijk.</p>
   </section>
@@ -642,7 +642,7 @@ permalink: /index.html
   <!-- FOOTER -->
   <footer>
     <span>© 2026 Denkverkenning</span>
-    <span><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></span>
+    <span><a href="#" class="obfuscated-email" data-email-rev="{{ site.contact.email | reverse }}">e-mail</a></span>
   </footer>
 
   <script>
@@ -681,6 +681,19 @@ permalink: /index.html
           .catch(function () {
             error.style.display = 'block';
           });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var links = document.querySelectorAll('.obfuscated-email');
+      links.forEach(function (link) {
+        var rev = link.getAttribute('data-email-rev');
+        if (!rev) return;
+        var email = rev.split('').reverse().join('');
+        link.setAttribute('href', 'mailto:' + email);
+        link.textContent = email;
       });
     })();
   </script>
