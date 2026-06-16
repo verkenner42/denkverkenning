@@ -442,6 +442,22 @@ permalink: /index.html
 
     .submit-btn:hover { background: var(--moss); }
 
+    .visually-hidden { position: absolute; left: -9999px; top: auto; }
+
+    .contact-success {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--moss);
+      margin-top: 1rem;
+    }
+
+    .contact-error {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--terracotta);
+      margin-top: 1rem;
+    }
+
     /* ── FOOTER ── */
     footer {
       background: var(--dark);
@@ -600,21 +616,27 @@ permalink: /index.html
       <h2>{{ site.contact.kop_deel1 }}<br><em>{{ site.contact.kop_deel2 }}</em></h2>
       <p>{{ site.contact.tekst }}</p>
     </div>
-    <form class="contact-form" action="mailto:{{ site.contact.email }}" method="post" enctype="text/plain">
+    <form name="contact" class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="visually-hidden">
+        <label>Laat dit veld leeg: <input name="bot-field"></label>
+      </p>
       <div class="field">
         <label for="naam">Naam</label>
         <input type="text" id="naam" name="naam" placeholder="Jouw naam">
       </div>
       <div class="field">
         <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="jouw@email.nl">
+        <input type="email" id="email" name="email" placeholder="jouw@email.nl" required>
       </div>
       <div class="field">
         <label for="bericht">Bericht</label>
         <textarea id="bericht" name="bericht" placeholder="Waar denk je over na?"></textarea>
       </div>
       <button type="submit" class="submit-btn">Verstuur</button>
+      <p class="contact-error" id="contactError" style="display:none;">Er ging iets mis bij het versturen. Mail rechtstreeks naar <a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>.</p>
     </form>
+    <p class="contact-success" id="contactSuccess" style="display:none;">Bedankt — je bericht is verstuurd. Ik reageer zo snel mogelijk.</p>
   </section>
 
   <!-- FOOTER -->
@@ -633,6 +655,34 @@ permalink: /index.html
         }
       });
     }
+  </script>
+
+  <script>
+    (function () {
+      var form = document.getElementById('contactForm');
+      var success = document.getElementById('contactSuccess');
+      var error = document.getElementById('contactError');
+      if (!form) return;
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        error.style.display = 'none';
+
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        })
+          .then(function (res) {
+            if (!res.ok) throw new Error('Submit failed');
+            form.style.display = 'none';
+            success.style.display = 'block';
+          })
+          .catch(function () {
+            error.style.display = 'block';
+          });
+      });
+    })();
   </script>
 
 </body>
