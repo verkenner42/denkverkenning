@@ -37,6 +37,14 @@ collections:
               - {label: "Alinea 1", name: "tekst1", widget: "text"}
               - {label: "Alinea 2", name: "tekst2", widget: "text"}
 
+          - label: "Diensten (intro)"
+            name: "diensten"
+            widget: "object"
+            fields:
+              - {label: "Kop — voor cursief deel", name: "kop_deel1", widget: "string", hint: "Bijv. 'Wat ik'"}
+              - {label: "Kop — cursief deel", name: "kop_deel2", widget: "string", hint: "Bijv. 'aanbied'"}
+              - {label: "Subtekst (rechts)", name: "subtekst", widget: "string"}
+
           - label: "Dienst 1"
             name: "dienst1"
             widget: "object"
