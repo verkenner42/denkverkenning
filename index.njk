@@ -615,11 +615,7 @@ permalink: /index.html
       <h2>{{ site.contact.kop_deel1 }} <em>{{ site.contact.kop_deel2 }}</em></h2>
       <p>{{ site.contact.tekst }}</p>
     </div>
-    <form name="contact" class="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
-      <input type="hidden" name="form-name" value="contact">
-      <p class="visually-hidden">
-        <label>Laat dit veld leeg: <input name="bot-field"></label>
-      </p>
+<form class="contact-form" method="POST" id="contactForm">
       <div class="field">
         <label for="naam">Naam</label>
         <input type="text" id="naam" name="naam" placeholder="Jouw naam">
@@ -644,21 +640,19 @@ permalink: /index.html
     <span><a href="#" class="obfuscated-email" data-email-rev="{{ site.contact.email | reverse }}">e-mail</a></span>
   </footer>
 
-  <script>
+ <script>
     (function () {
       var form = document.getElementById('contactForm');
       var success = document.getElementById('contactSuccess');
       var error = document.getElementById('contactError');
       if (!form) return;
-
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         error.style.display = 'none';
-
-        fetch('/', {
+        fetch('https://formspree.io/f/xpqeeakg', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(new FormData(form)).toString()
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
         })
           .then(function (res) {
             if (!res.ok) throw new Error('Submit failed');
