@@ -1,17 +1,17 @@
-{
-  "hero": {
-    "label": "Filosofische praktijk · Haarlem eo",
-    "h1_regel1": "Denken ",
-    "h1_regel2": "als praktijk",
-    "subtekst": "Je traint je lichaam, maar hoe zit het met je denken? Voor wie vastloopt in eigen logica en de ononderzochte plek durft op te zoeken. Een personal trainer voor je geest, gericht op bruikbaarheid en helderheid. ",
-    "quote": "Ruimte in je hoofd ontstaat zodra je de vragen durft te stellen die je tot nu toe vooruit schoof."
-  },
-  "over": {
-    "kop_deel1": "Denken",
-    "kop_deel2": "als praktijk",
-    "kop_deel3": ".",
-    "tekst1": "Als gepromoveerd neurowetenschapper en onderzoeker ben ik gefascineerd door hoe ons brein patronen en logica gebruikt. Die wetenschappelijke basis neem ik mee in Denkverkenning. Ik werk met mensen die gewend zijn om veel en diep na te denken, maar merken dat ze vastlopen in hun eigen vaste denkkaders.",
-    "tekst2": "Zie mij als een personal trainer voor je geest. Mijn aanpak is Socratisch: ik stel de vragen die je helpen om je eigen gedachten weer scherp te krijgen. Geen kant-en-klare adviezen, wel de rust en de ruimte om te ontdekken wat voor jou werkelijk standhoudt."
+"hero": {
+  "label": "Filosofische praktijk · Haarlem eo",
+  "h1_regel1": "Denken",
+  "h1_regel2": "als praktijk",
+  "subtekst": "Voor wie wil weten hoe het eigen denken precies werkt. Uit eigen interesse, niet omdat het moet.",
+  "quote": "Een gesprek dat nergens op uitkomt, is niet mislukt."
+},
+"over": {
+  "kop_deel1": "Hoe ik",
+  "kop_deel2": "denk",
+  "kop_deel3": "",
+  "tekst1": "Ik ben nieuwsgierig naar hoe denken zelf werkt. Ik zie het niet als een probleem dat opgelost moet worden, maar als iets om te onderzoeken. Dat doe ik ook met de mensen die bij me komen.",
+  "tekst2": "Ik stel vragen, niet om ergens naartoe te werken maar om te zien wat er gebeurt als je een gedachte echt volgt. Het gaat niet om wat je eruit haalt, maar om hoe je je verhoudt tot wat er ontstaat.",
+  "tekst3": "Ik heb een PhD in de neurowetenschappen, en ik ben me steeds meer bewust van het niet-weten. Ik vind het vooral leuk om interessante gesprekken te voeren; ik ben nieuwsgierig naar wat een ander denkt." 
   },
   "diensten": {
     "kop_deel1": "Wat ik",
