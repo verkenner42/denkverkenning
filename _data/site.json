@@ -3,9 +3,8 @@
   "label": "Filosofische praktijk · Haarlem eo",
   "h1_regel1": "Denken",
   "h1_regel2": "als praktijk",
-  "subtekst": "Voor mensen die vastlopen op een tegenstrijdigheid in zichzelf: ze willen twee dingen tegelijk oprecht, en die zitten elkaar in de weg. Ook voor wie simpelweg wil weten hoe het eigen denken precies werkt. Uit eigen interesse, niet omdat het moet.",
-  "quote": "Het gesprek stopt niet zodra je weg bent. Je denkt er onbewust over door, schrijft er af en toe iets bij. Of de aanname zich laat zien, weet je vooraf niet."
-  
+  "subtekst": "Voor wie wil weten hoe het eigen denken precies werkt. Uit eigen interesse, niet omdat het moet.",
+  "quote": "Een gesprek dat nergens op uitkomt, is niet mislukt."
 },
 "over": {
   "kop_deel1": "Hoe ik",
@@ -52,7 +51,29 @@
     "kop_deel1": "Voor wie",
     "kop_deel2": "denkt",
     "kop_deel3": "en toch vastloopt",
-    "tekst": "Professionals, onderzoekers, creatieven en anderen die gewend zijn hun hoofd te gebruiken — maar merken dat denken alleen niet genoeg is als je niet weet welke vraag je eigenlijk stelt."
+    "tekst": "Voor mensen die vastlopen op een tegenstrijdigheid in zichzelf: ze willen twee dingen tegelijk oprecht, en die zitten elkaar in de weg. Ook voor wie simpelweg wil weten hoe het eigen denken precies werkt. Uit eigen interesse, niet omdat het moet."
+  },
+  "faq": {
+    "kop_deel1": "Veelgestelde",
+    "kop_deel2": "vragen",
+    "items": [
+      {
+        "vraag": "Hoe lang duurt een gesprek?",
+        "antwoord": "Een gesprek duurt 45 minuten."
+      },
+      {
+        "vraag": "Wat kost een gesprek?",
+        "antwoord": "Naar draagkracht, incl. btw, per gesprek van 45 minuten — afhankelijk van je bruto maandinkomen. Vooraf is er altijd een gratis kennismaking van 15 minuten (telefonisch of online).<table class=\"tarieventabel\"><tr><td>Minder dan €2.000</td><td>€55</td></tr><tr><td>€2.000 – €3.000</td><td>€70</td></tr><tr><td>€3.000 – €4.000</td><td>€85</td></tr><tr><td>€4.000 – €6.000</td><td>€100</td></tr><tr><td>€6.000 – €9.000</td><td>€120</td></tr><tr><td>Meer dan €9.000</td><td>€140</td></tr></table>"
+      },
+      {
+        "vraag": "Waar vinden de gesprekken plaats?",
+        "antwoord": "De gesprekken zelf zijn fysiek, in Haarlem en omgeving. De kennismaking is telefonisch of online."
+      },
+      {
+        "vraag": "Hoe boek ik een gesprek?",
+        "antwoord": "Via het contactformulier hieronder, of per e-mail."
+      }
+    ]
   },
   "contact": {
     "kop_deel1": "Begin met",
