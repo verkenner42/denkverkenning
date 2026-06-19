@@ -22,6 +22,34 @@ permalink: /index.html
   }
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt een gesprek?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Een gesprek duurt 45 minuten." }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat kost een gesprek?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Naar draagkracht: van 40 tot 125 euro per gesprek van 45 minuten, inclusief btw, afhankelijk van het bruto maandinkomen. Vooraf is er een gratis kennismaking van 15 minuten." }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar vinden de gesprekken plaats?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Fysiek, in Haarlem en omgeving." }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe boek ik een gesprek?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Via het contactformulier op de website, of per e-mail." }
+    }
+  ]
+}
+</script>
 <meta name="description" content="Denkverkenning: filosofische praktijk in Haarlem voor wie vastloopt op een tegenstrijdigheid in zichzelf. Eén-op-één denkgesprekken.">
 <meta property="og:title" content="Denkverkenning · Filosofische praktijk">
 <meta property="og:description" content="Voor wie vastloopt op een tegenstrijdigheid in zichzelf en dat wil begrijpen in plaats van oplossen.">
@@ -42,7 +70,7 @@ permalink: /index.html
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; font-size: 21px; }
 
     body {
       background: var(--cream);
@@ -173,7 +201,6 @@ permalink: /index.html
       font-size: 1.05rem;
       font-style: italic;
       color: var(--moss);
-      max-width: 46ch;
       border-left: 2px solid var(--terracotta);
       padding-left: 1.5rem;
       margin: 0;
@@ -392,9 +419,48 @@ permalink: /index.html
     #voor-wie p {
       color: var(--moss);
       font-size: 1.1rem;
-      max-width: 50ch;
+      max-width: 70ch;
       margin: 0 auto;
     }
+
+    /* ── FAQ ── */
+    #faq {
+      padding: 8rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .faq-inner {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .faq-text h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      line-height: 1.25;
+    }
+
+    .faq-text h2 em { font-style: italic; color: var(--moss); }
+
+    .faq-list { display: flex; flex-direction: column; }
+
+    .faq-item {
+      border-top: 1px solid #ddd8cf;
+      padding: 1.5rem 0;
+    }
+
+    .faq-item:last-child { border-bottom: 1px solid #ddd8cf; }
+
+    .faq-item strong { display: block; font-weight: 400; margin-bottom: 0.4rem; font-size: 1.1rem; }
+    .faq-item span { font-size: 0.95rem; color: var(--warm-gray); }
+
+    .tarieventabel { margin-top: 1rem; border-collapse: collapse; font-size: 0.9rem; }
+    .tarieventabel td { padding: 0.4rem 1.2rem 0.4rem 0; color: var(--warm-gray); border-top: 1px solid #ddd8cf; }
+    .tarieventabel tr:first-child td { border-top: none; }
+    .tarieventabel td:last-child { color: var(--dark); font-family: 'DM Mono', monospace; font-size: 0.8rem; }
 
     /* ── CONTACT ── */
     #contact {
@@ -512,6 +578,8 @@ permalink: /index.html
       .werkwijze-inner { grid-template-columns: 1fr; gap: 3rem; }
       #werkwijze { padding: 5rem 2rem; }
       #voor-wie { padding: 5rem 2rem; }
+      .faq-inner { grid-template-columns: 1fr; gap: 3rem; }
+      #faq { padding: 5rem 2rem; }
     }
   </style>
 </head>
@@ -523,6 +591,7 @@ permalink: /index.html
     <ul>
       <li><a href="#over">Over</a></li>
       <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -610,6 +679,24 @@ permalink: /index.html
     <p class="section-label">Voor wie</p>
     <h2>{{ site.voor_wie.kop_deel1 }} <em>{{ site.voor_wie.kop_deel2 }}</em> {{ site.voor_wie.kop_deel3 }}</h2>
     <p>{{ site.voor_wie.tekst }}</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="faq-inner">
+      <div class="faq-text">
+        <p class="section-label">Veelgestelde vragen</p>
+        <h2>{{ site.faq.kop_deel1 }} <em>{{ site.faq.kop_deel2 }}</em></h2>
+      </div>
+      <div class="faq-list">
+        {% for item in site.faq.items %}
+        <div class="faq-item">
+          <strong>{{ item.vraag }}</strong>
+          <span>{{ item.antwoord | safe }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
   </section>
 
   <!-- CONTACT -->

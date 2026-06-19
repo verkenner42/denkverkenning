@@ -1,0 +1,84 @@
+{
+"hero": {
+  "label": "Filosofische praktijk · Haarlem eo",
+  "h1_regel1": "Denken",
+  "h1_regel2": "als praktijk",
+  "subtekst": "Voor wie wil weten hoe het eigen denken precies werkt. Uit eigen interesse, niet omdat het moet.",
+  "quote": "Een gesprek dat nergens op uitkomt, is niet mislukt."
+},
+"over": {
+  "kop_deel1": "Hoe ik",
+  "kop_deel2": "denk",
+  "kop_deel3": "",
+  "tekst1": "Ik ben nieuwsgierig naar hoe denken zelf werkt. Ik zie het niet als een probleem dat opgelost moet worden, maar als iets om te onderzoeken. Dat doe ik ook met de mensen die bij me komen.",
+  "tekst2": "Ik stel vragen, niet om ergens naartoe te werken maar om te zien wat er gebeurt als je een gedachte echt volgt. Het gaat niet om wat je eruit haalt, maar om hoe je je verhoudt tot wat er ontstaat.",
+  "tekst3": "Ik heb een PhD in de neurowetenschappen, en ik ben me steeds meer bewust van het niet-weten. Ik vind het vooral leuk om interessante gesprekken te voeren; ik ben nieuwsgierig naar wat een ander denkt." 
+  },
+  "diensten": {
+    "kop_deel1": "Wat ik",
+    "kop_deel2": "aanbied",
+    "subtekst": "Twee vormen. Elk met eigen dynamiek."
+  },
+  "dienst1": {
+    "titel": "1-op-1 sessies",
+    "tekst": "Een-op-een gesprekken van 45 minuten. Gericht op een concrete vraag, een patroon dat je herkent maar niet begrijpt, of gewoon: grondig nadenken over iets wat telt."
+  },
+  "dienst2": {
+    "titel": "Workshops & groepen",
+    "tekst": "Filosofische sessies in kleine groepen — voor teams, communities of mensen die samen scherper willen denken. Thematisch of open van opzet."
+  },
+  "werkwijze": {
+    "kop_deel1": "Niet",
+    "kop_deel2": "helpend",
+    "kop_deel3": ", wel bruikbaar",
+    "tekst": "Filosofische begeleiding is geen therapie. Er is geen agenda om je beter te laten voelen. Wel een agenda om helderder te denken — ook als dat schuurt.",
+    "kenmerken": [
+      {
+        "titel": "Socratisch onderzoek",
+        "beschrijving": "Vragen die de veronderstelling ontleden, niet valideren."
+      },
+      {
+        "titel": "Structuur in complexiteit",
+        "beschrijving": "Patronen benoemen die eerder vaag bleven."
+      },
+      {
+        "titel": "Geen pasklare antwoorden",
+        "beschrijving": "Autonomie van de denker blijft centraal. Ik navigeer, jij concludeert."
+      }
+    ]
+  },
+  "voor_wie": {
+    "kop_deel1": "Voor wie",
+    "kop_deel2": "denkt",
+    "kop_deel3": "en toch vastloopt",
+    "tekst": "Voor mensen die vastlopen op een tegenstrijdigheid in zichzelf: ze willen twee dingen tegelijk oprecht, en die zitten elkaar in de weg. Ook voor wie simpelweg wil weten hoe het eigen denken precies werkt. Uit eigen interesse, niet omdat het moet."
+  },
+  "faq": {
+    "kop_deel1": "Veelgestelde",
+    "kop_deel2": "vragen",
+    "items": [
+      {
+        "vraag": "Hoe lang duurt een gesprek?",
+        "antwoord": "Een gesprek duurt 45 minuten."
+      },
+      {
+        "vraag": "Wat kost een gesprek?",
+        "antwoord": "Naar draagkracht, incl. btw, per gesprek van 45 minuten — afhankelijk van je bruto maandinkomen. Vooraf is er altijd een gratis kennismaking van 15 minuten.<table class=\"tarieventabel\"><tr><td>Minder dan €2.000</td><td>€40</td></tr><tr><td>€2.000 – €3.000</td><td>€55</td></tr><tr><td>€3.000 – €4.000</td><td>€70</td></tr><tr><td>€4.000 – €6.000</td><td>€85</td></tr><tr><td>€6.000 – €9.000</td><td>€105</td></tr><tr><td>Meer dan €9.000</td><td>€125</td></tr></table>"
+      },
+      {
+        "vraag": "Waar vinden de gesprekken plaats?",
+        "antwoord": "Fysiek, in Haarlem en omgeving."
+      },
+      {
+        "vraag": "Hoe boek ik een gesprek?",
+        "antwoord": "Via het contactformulier hieronder, of per e-mail."
+      }
+    ]
+  },
+  "contact": {
+    "kop_deel1": "Begin met",
+    "kop_deel2": "een vraag",
+    "tekst": "Stuur me een bericht. Je hoeft nog niet te weten wat je zoekt — dat is precies een goed beginpunt.",
+    "email": "info@denkverkenning.nl"
+  }
+}
