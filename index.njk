@@ -531,6 +531,39 @@ permalink: /index.html
 
     .visually-hidden { position: absolute; left: -9999px; top: auto; }
 
+    /* ── COOKIE BANNER ── */
+    .cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      z-index: 200;
+      background: var(--dark);
+      color: var(--cream);
+      padding: 1.25rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .cookie-banner p { margin: 0; font-size: 0.95rem; max-width: 60ch; }
+    .cookie-banner a { color: var(--cream); text-decoration: underline; }
+    .cookie-actions { display: flex; gap: 0.75rem; flex-shrink: 0; }
+    .cookie-actions button {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.7rem 1.4rem;
+      border: 1px solid var(--cream);
+      background: transparent;
+      color: var(--cream);
+      cursor: pointer;
+    }
+    .cookie-accept { background: var(--cream); color: var(--dark); }
+    @media (max-width: 700px) {
+      .cookie-banner { flex-direction: column; align-items: flex-start; }
+    }
+
     .contact-success {
       font-family: 'Cormorant Garamond', serif;
       font-size: 1.1rem;
@@ -737,6 +770,15 @@ permalink: /index.html
     <span><a href="/privacy/">Privacy</a></span>
   </footer>
 
+  <!-- COOKIE BANNER -->
+  <div id="cookieBanner" class="cookie-banner" style="display:none;">
+    <p>Deze site gebruikt Microsoft Clarity om te zien hoeveel mensen de site bezoeken en hoe de pagina wordt gebruikt (heatmaps, scrollgedrag). Geen marketing, geen doorverkoop aan derden. <a href="/privacy/">Privacy</a>.</p>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-decline">Liever niet</button>
+      <button type="button" class="cookie-accept">Akkoord</button>
+    </div>
+  </div>
+
  <script>
     (function () {
       var form = document.getElementById('contactForm');
@@ -760,6 +802,45 @@ permalink: /index.html
             error.style.display = 'block';
           });
       });
+    })();
+  </script>
+
+  <!-- ANALYTICS (Microsoft Clarity, alleen na toestemming) -->
+  <script>
+    (function () {
+      var CLARITY_ID = "{{ site.analytics.clarityId }}";
+      var banner = document.getElementById('cookieBanner');
+
+      function loadClarity() {
+        if (!CLARITY_ID) return;
+        (function (c, l, a, r, i, t, y) {
+          c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+          t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+          y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", CLARITY_ID);
+      }
+
+      var consent = localStorage.getItem('clarity-consent');
+
+      if (consent === 'granted') {
+        loadClarity();
+      } else if (consent !== 'denied' && banner && CLARITY_ID) {
+        banner.style.display = 'flex';
+      }
+
+      if (banner) {
+        var acceptBtn = banner.querySelector('.cookie-accept');
+        var declineBtn = banner.querySelector('.cookie-decline');
+        if (acceptBtn) acceptBtn.addEventListener('click', function () {
+          localStorage.setItem('clarity-consent', 'granted');
+          banner.style.display = 'none';
+          loadClarity();
+        });
+        if (declineBtn) declineBtn.addEventListener('click', function () {
+          localStorage.setItem('clarity-consent', 'denied');
+          banner.style.display = 'none';
+        });
+      }
     })();
   </script>
 

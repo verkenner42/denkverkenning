@@ -1,12 +1,10 @@
 # Tone of voice & contentstrategie — Denkverkenning.nl
 
-## Kernpositionering (concept, nog niet bevestigd)
+## Kernpositionering (bevestigd)
 
-Dit ontbrak nog: niet hoe je schrijft, maar waarom. Een poging tot formulering, gebaseerd op wat al op de site staat en wat je in dit gesprek hebt aangegeven — ter correctie, niet als vaststaand:
+"Denken wordt meestal ingezet als instrument: om een probleem op te lossen, een knoop door te hakken, sneller verder te kunnen. Deze praktijk gaat over het tegenovergestelde. Denken als iets dat onderzoek verdraagt, ook als het nergens op uitkomt. Niet om gerustgesteld te worden, maar om scherper te zien wat je al dacht te weten. Geen geruststelling, wel precisie. Geen antwoorden van mij, wel de logica van je eigen denken die zichtbaar wordt."
 
-"Denken wordt meestal ingezet als instrument: om een probleem op te lossen, een knoop door te hakken, sneller verder te kunnen. Deze praktijk gaat over het tegenovergestelde. Denken als iets dat onderzoek verdraagt, ook als het nergens op uitkomt. Niet om gerustgesteld te worden, maar om scherper te zien wat je al dacht te weten. Geen geruststelling, wel precisie. Geen antwoorden van mij, wel een grondiger gesprek met jezelf."
-
-Zonder een expliciete versie hiervan wordt elke volgende schrijfkeuze op precedent gemaakt in plaats van op principe — dat is hoe een site over tijd inconsistent wordt zonder dat iemand een fout heeft gemaakt.
+Laatste zin bewust gekoppeld aan de bestaande heldenzin op de site ("de logica van je eigen denken onderzocht") — zelfde term, geen synoniem ervoor verzonnen. Toetssteen voor elke nieuwe tekst op alle drie de kanalen.
 
 ## Tone of voice
 
@@ -18,13 +16,11 @@ Ritme via korte zinnen en contrast: "Geen X. Wel Y." Eerlijk over niet-weten —
 
 Stijlregel: geen em-dashes.
 
-## Doelgroep — nog open
+## Doelgroep (besloten)
 
-Huidige copy is bewust universeel: beschrijft de ervaring ("vastlopen op een tegenstrijdigheid in zichzelf") zonder label. Net besproken: mogelijk explicieter richting (hoogopgeleide) professionals, met "vooral over werk" als invalshoek, en/of hoogbegaafden.
+Experience-based taal, geen labels. Niemand wordt expliciet "voor professionals", "voor hoogbegaafden" of "vooral over werk" genoemd — wie zich herkent in de beschrijving ("vastlopen op een tegenstrijdigheid in zichzelf"), herkent zich, zonder zich eerst met een diagnose, titel of werkcontext te moeten identificeren. Een label sluit net zo goed mensen uit als in.
 
-Niet opgelost: "vooral over werk" staat op gespannen voet met de bestaande regel "uit eigen interesse, niet omdat het moet" — die sluit een instrumentele, werk-gedreven aanleiding net uit. Dit is geen kwestie van toevoegen, maar van kiezen.
-
-Aanbeveling: experience-based taal in plaats van labels. Niemand wordt expliciet "voor professionals" of "voor hoogbegaafden" genoemd — wie zich herkent in de beschrijving, herkent zich, zonder zich eerst met een diagnose of titel te moeten identificeren. Een label sluit net zo goed mensen uit als in.
+Dit besluit sluit tegelijk de eerder gesignaleerde spanning met "uit eigen interesse, niet omdat het moet": een werk-frame voegt een instrumentele aanleiding toe die deze regel net uitsluit. Door geen labels te gebruiken, blijft die instrumentele framing ook buiten beeld. Geen aparte knop om nog om te draaien.
 
 ## Kanaal-tonaliteit
 
@@ -44,9 +40,9 @@ Wat over alle kanalen gelijk blijft, ongeacht toon: eerste persoon, eerlijk over
 
 Wat per kanaal mag verschillen: scherpte/confrontatie (laag op denkverkenning.nl, hoog toegestaan op de andere twee), register (zakelijk-precies versus narratief-reflectief), lengte en vorm (FAQ en gestructureerde copy op denkverkenning.nl, vrije vorm elders).
 
-## Woordenlijst
+## Woordenlijst (vastgelegd)
 
-Nog niet vastgelegd, wisselt nu per tekst: "gesprek" of "denkgesprek", "kennismaking" of "intake", "bezoeker" of iets specifieker. Huidige site gebruikt consequent "gesprek" en "kennismaking" (zie site.json) — voorstel: dat als vaste term aanhouden, en hier vastleggen zodra bevestigd, zodat het niet meer per tekst opnieuw wordt bedacht.
+"Gesprek" (niet "denkgesprek"). "Kennismaking" (niet "intake"). Consequent toepassen op alle drie de kanalen, ook als een synoniem op het moment zelf vlotter loopt — dat is precies het moment waarop inconsistentie binnensluipt.
 
 ## Wat je nooit doet
 

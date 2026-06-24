@@ -81,5 +81,8 @@
     "kop_deel2": "een vraag",
     "tekst": "Stuur me een bericht. Je hoeft nog niet te weten wat je zoekt. Dat is precies een goed beginpunt.",
     "email": "info@denkverkenning.nl"
+  },
+  "analytics": {
+    "clarityId": ""
   }
 }
