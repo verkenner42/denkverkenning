@@ -2,7 +2,7 @@
 
 ## Kernpositionering (bevestigd)
 
-"Denken wordt meestal ingezet als instrument: om een probleem op te lossen, een knoop door te hakken, sneller verder te kunnen. Deze praktijk gaat over het tegenovergestelde. Denken als iets dat onderzoek verdraagt, ook als het nergens op uitkomt. Niet om gerustgesteld te worden, maar om scherper te zien wat je al dacht te weten. Geen geruststelling, wel precisie. Geen antwoorden van mij, wel de logica van je eigen denken die zichtbaar wordt."
+"Denken wordt meestal ingezet als instrument: om een probleem op te lossen, een knoop door te hakken, sneller verder te kunnen. Deze praktijk gaat over het tegenovergestelde. Denken als iets dat onderzoek verdraagt, ook als het nergens op uitkomt. Het draait om precisie, scherper zien wat je al dacht te weten, niet om gerustgesteld worden. Wat zichtbaar wordt, is de logica van je eigen denken, niet een antwoord van mij."
 
 Laatste zin bewust gekoppeld aan de bestaande heldenzin op de site ("de logica van je eigen denken onderzocht") — zelfde term, geen synoniem ervoor verzonnen. Toetssteen voor elke nieuwe tekst op alle drie de kanalen.
 
@@ -12,7 +12,7 @@ Eerste persoon ("ik"), bezoeker aangesproken met "je". Nuchter en precies, niet 
 
 Diepgang komt uit precisie en vakinhoud (PhD neurowetenschappen, achtergrond filosofie, training in het analyseren van complexe systemen) — niet uit confrontatie. Confrontatie en hardere taal zijn bewust gereserveerd voor saskiawoudstra.com. Een bezoeker hier moet voor het eerst een drempel over om contact te zoeken vanuit een vastgelopen patroon; confrontatie verhoogt die drempel in plaats van hem te verlagen.
 
-Ritme via korte zinnen en contrast: "Geen X. Wel Y." Eerlijk over niet-weten — geen pasklare antwoorden, geen valse zekerheid. Kernonderscheid: expliciet "geen therapie", vergeleken met een personal trainer voor je geest (trainen, niet genezen).
+Ritme via korte zinnen. Geen "Geen X, wel Y"-constructie (of "Niet X, maar Y") als terugkerend patroon binnen één zin — leest als AI-geschreven tekst, vooral zodra de zin langer wordt dan een kort, herkenbaar ritme. Contrast ontstaat uit concrete inhoud en zinsvolgorde (positieve bewering eerst, ontkenning eventueel kort erachteraan), niet uit een herhaalde ontkenning-plus-omkering-formule. Eerlijk over niet-weten, geen pasklare antwoorden, geen valse zekerheid. Kernonderscheid: expliciet "geen therapie", vergeleken met een personal trainer voor je geest (trainen, niet genezen).
 
 Stijlregel: geen em-dashes.
 
