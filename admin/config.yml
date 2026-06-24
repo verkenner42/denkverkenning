@@ -1,0 +1,102 @@
+# Use DecapBridge classic auth (required)
+backend:
+  name: git-gateway
+  repo: verkenner42/denkverkenning
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/a5e9f8f8-7d13-4b65-b2cd-45ed487e5325
+  gateway_url: https://gateway.decapbridge.com
+  # See who did what (optional)
+  commit_messages:
+    create: Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    update: Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    delete: Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    uploadMedia: Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    deleteMedia: Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+# Better Decap + Bridge logo (optional)
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+# Add site links in Decap CMS (optional)
+site_url: https://denkverkenning.nl
+
+locale: nl
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "content"
+    label: "Website inhoud"
+    files:
+      - name: "site"
+        label: "Alle teksten"
+        file: "_data/site.json"
+        format: json
+        fields:
+
+          - label: "Hero (bovenste sectie)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Klein label", name: "label", widget: "string", hint: "Bijv. 'Filosofische praktijk · Amsterdam'"}
+              - {label: "Kop — regel 1", name: "h1_regel1", widget: "string"}
+              - {label: "Kop — regel 2 (cursief)", name: "h1_regel2", widget: "string"}
+              - {label: "Subtekst", name: "subtekst", widget: "text"}
+              - {label: "Quote (rechts)", name: "quote", widget: "text"}
+
+          - label: "Over"
+            name: "over"
+            widget: "object"
+            fields:
+              - {label: "Kop — voor cursief deel", name: "kop_deel1", widget: "string", hint: "Bijv. 'Filosofie die'"}
+              - {label: "Kop — cursief deel", name: "kop_deel2", widget: "string", hint: "Bijv. 'wrijft'"}
+              - {label: "Kop — na cursief deel", name: "kop_deel3", widget: "string", hint: "Bijv. ', niet streelt'"}
+              - {label: "Alinea 1", name: "tekst1", widget: "text"}
+              - {label: "Alinea 2", name: "tekst2", widget: "text"}
+
+          - label: "Dienst 1"
+            name: "dienst1"
+            widget: "object"
+            fields:
+              - {label: "Titel", name: "titel", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+
+          - label: "Dienst 2"
+            name: "dienst2"
+            widget: "object"
+            fields:
+              - {label: "Titel", name: "titel", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+
+          - label: "Werkwijze"
+            name: "werkwijze"
+            widget: "object"
+            fields:
+              - {label: "Kop — voor cursief deel", name: "kop_deel1", widget: "string"}
+              - {label: "Kop — cursief deel", name: "kop_deel2", widget: "string"}
+              - {label: "Kop — na cursief deel", name: "kop_deel3", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+              - label: "Kenmerken"
+                name: "kenmerken"
+                widget: "list"
+                summary: "{{fields.titel}}"
+                fields:
+                  - {label: "Titel", name: "titel", widget: "string"}
+                  - {label: "Beschrijving", name: "beschrijving", widget: "text"}
+
+          - label: "Voor wie"
+            name: "voor_wie"
+            widget: "object"
+            fields:
+              - {label: "Kop — voor cursief deel", name: "kop_deel1", widget: "string"}
+              - {label: "Kop — cursief deel", name: "kop_deel2", widget: "string"}
+              - {label: "Kop — na cursief deel", name: "kop_deel3", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - {label: "Kop — regel 1", name: "kop_deel1", widget: "string"}
+              - {label: "Kop — regel 2 (cursief)", name: "kop_deel2", widget: "string"}
+              - {label: "Tekst", name: "tekst", widget: "text"}
+              - {label: "E-mailadres", name: "email", widget: "string"}

@@ -1,0 +1,11 @@
+node_modules/
+_site/
+.DS_Store
+
+# ongebruikte concept-afbeeldingen, niet gerefereerd in index.njk
+/stoelen.png
+/stoelen_oud.png
+/stoelen-preview-op-groen.png
+
+# Google Drive shortcut-bestanden (.gdoc), geen echte inhoud
+*.gdoc

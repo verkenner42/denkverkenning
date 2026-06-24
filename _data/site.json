@@ -1,0 +1,85 @@
+{
+"hero": {
+  "label": "Filosofische praktijk · Haarlem eo",
+  "h1_regel1": "Denken",
+  "h1_regel2": "als praktijk",
+  "subtekst": "Wanneer heb je voor het laatst de logica van je eigen denken onderzocht? Niet het probleem zelf, maar hoe je erover denkt.",
+  "quote": "Het gesprek stopt niet zodra je weg bent. Je denkt er onbewust over door, schrijft er af en toe iets bij. Of de aanname zich laat zien, weet je vooraf niet."
+},
+"over": {
+  "kop_deel1": "Hoe ik",
+  "kop_deel2": "denk",
+  "kop_deel3": "",
+  "tekst1": "Ik ben nieuwsgierig naar hoe denken zelf werkt. Ik zie het niet als een probleem dat opgelost moet worden, maar als iets om te onderzoeken. Dat doe ik ook met de mensen die bij me komen.",
+  "tekst2": "Ik stel vragen, niet om ergens naartoe te werken maar om te zien wat er gebeurt als je een gedachte echt volgt. Het gaat niet om wat je eruit haalt, maar om hoe je je verhoudt tot wat er ontstaat.",
+  "tekst3": "Ik heb een PhD in de neurowetenschappen en een achtergrond in de filosofie, getraind in het analyseren van complexe systemen. Ik ben me steeds meer bewust van het niet-weten, en vind het vooral leuk om interessante gesprekken te voeren; nieuwsgierig naar wat een ander denkt."
+  },
+  "diensten": {
+    "kop_deel1": "Wat ik",
+    "kop_deel2": "aanbied",
+    "subtekst": "Twee vormen. Elk met eigen dynamiek."
+  },
+  "dienst1": {
+    "titel": "1-op-1 sessies",
+    "tekst": "Één-op-één gesprekken van 45 minuten. Gericht op een concrete vraag, een patroon dat je herkent maar niet begrijpt, of gewoon: grondig nadenken over iets wat telt.",
+    "tekst2": "Filosofisch onderzoek ontvouwt zich over tijd. De meeste mensen komen meerdere keren, omdat een gedachte pas echt te volgen is als je er langer bij blijft."
+  },
+  "dienst2": {
+    "titel": "Workshops & groepen",
+    "tekst": "Filosofische sessies in kleine groepen, voor teams, communities of mensen die samen scherper willen denken. Thematisch of open van opzet."
+  },
+  "werkwijze": {
+    "kop_deel1": "Niet",
+    "kop_deel2": "helpend",
+    "kop_deel3": ", wel bruikbaar",
+    "tekst": "Filosofische begeleiding is geen therapie, eerder een personal trainer voor je geest. Geen agenda om je beter te laten voelen. Wel een agenda om je denkvermogen te trainen en helderder te denken, ook als dat schuurt.",
+    "kenmerken": [
+      {
+        "titel": "Socratisch onderzoek",
+        "beschrijving": "Rigoureus kijken naar je eigen aannames, niet ze valideren."
+      },
+      {
+        "titel": "Structuur in complexiteit",
+        "beschrijving": "Patronen benoemen die eerder vaag bleven."
+      },
+      {
+        "titel": "Geen pasklare antwoorden",
+        "beschrijving": "Autonomie van de denker blijft centraal. Ik navigeer, jij concludeert."
+      }
+    ]
+  },
+  "voor_wie": {
+    "kop_deel1": "Voor wie",
+    "kop_deel2": "denkt",
+    "kop_deel3": "en toch vastloopt",
+    "tekst": "Voor mensen die vastlopen op een tegenstrijdigheid in zichzelf: ze willen twee dingen tegelijk oprecht, en die zitten elkaar in de weg. Ook voor wie simpelweg wil weten hoe het eigen denken precies werkt. Uit eigen interesse, niet omdat het moet."
+  },
+  "faq": {
+    "kop_deel1": "Veelgestelde",
+    "kop_deel2": "vragen",
+    "items": [
+      {
+        "vraag": "Hoe lang duurt een gesprek?",
+        "antwoord": "Een gesprek duurt 45 minuten."
+      },
+      {
+        "vraag": "Wat kost een gesprek?",
+        "antwoord": "Dat bespreken we in een gratis kennismaking van 15 minuten, telefonisch of online. Zo kunnen we afstemmen op wat je zoekt en wat passend is."
+      },
+      {
+        "vraag": "Waar vinden de gesprekken plaats?",
+        "antwoord": "De gesprekken zelf zijn fysiek, in Haarlem en omgeving. De kennismaking is telefonisch of online."
+      },
+      {
+        "vraag": "Hoe boek ik een gesprek?",
+        "antwoord": "Via het contactformulier hieronder, of per e-mail."
+      }
+    ]
+  },
+  "contact": {
+    "kop_deel1": "Begin met",
+    "kop_deel2": "een vraag",
+    "tekst": "Stuur me een bericht. Je hoeft nog niet te weten wat je zoekt. Dat is precies een goed beginpunt.",
+    "email": "info@denkverkenning.nl"
+  }
+}

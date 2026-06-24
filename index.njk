@@ -1,0 +1,780 @@
+---
+permalink: /index.html
+---
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Denkverkenning",
+  "url": "https://denkverkenning.nl",
+  "email": "info@denkverkenning.nl",
+  "areaServed": "Haarlem en omgeving",
+  "description": "Filosofische praktijk voor één-op-één denkgesprekken.",
+  "founder": {
+    "@type": "Person",
+    "name": "Saskia Woudstra",
+    "description": "Voert filosofische denkgesprekken, PhD in de neurowetenschappen."
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoe lang duurt een gesprek?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Een gesprek duurt 45 minuten." }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat kost een gesprek?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dat bespreken we in een gratis kennismaking van 15 minuten, telefonisch of online. Zo kunnen we afstemmen op wat je zoekt en wat passend is." }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar vinden de gesprekken plaats?",
+      "acceptedAnswer": { "@type": "Answer", "text": "De gesprekken zelf zijn fysiek, in Haarlem en omgeving. De kennismaking is telefonisch of online." }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe boek ik een gesprek?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Via het contactformulier op de website, of per e-mail." }
+    }
+  ]
+}
+</script>
+<meta name="description" content="Denkverkenning: filosofische praktijk in Haarlem voor wie vastloopt op een tegenstrijdigheid in zichzelf. Eén-op-één denkgesprekken.">
+<meta property="og:title" content="Denkverkenning · Filosofische praktijk">
+<meta property="og:description" content="Voor wie vastloopt op een tegenstrijdigheid in zichzelf en dat wil begrijpen in plaats van oplossen.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://denkverkenning.nl">
+<meta property="og:locale" content="nl_NL">
+  <title>Denkverkenning · Filosofische praktijk voor kritische denkers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <style> 
+      :root {
+      --cream: #f5f0e8;
+      --dark: #1c1a17;
+      --moss: #4a5240;
+      --terracotta: #a05c3f;
+      --warm-gray: #8a857c;
+      --light-moss: #dde3d5;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 21px; }
+
+    body {
+      background: var(--cream);
+      color: var(--dark);
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 19px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 4rem;
+    }
+
+    nav .logo {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 300;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dark);
+      text-decoration: none;
+    }
+
+    nav ul { list-style: none; display: flex; gap: 2.5rem; }
+
+    nav ul a {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--warm-gray);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    nav ul a:hover { color: var(--dark); }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 0 4rem 5rem;
+      position: relative;
+    }
+
+    .hero-inner {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: end;
+    }
+
+    .hero-left { padding-top: 10rem; }
+
+    .hero-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(3.5rem, 7vw, 6.5rem);
+      font-weight: 300;
+      line-height: 1.0;
+      letter-spacing: -0.02em;
+    }
+
+    h1 em { font-style: italic; color: var(--moss); white-space: nowrap; }
+
+    .hero-sub {
+      margin-top: 2.5rem;
+      font-size: 1.15rem;
+      color: var(--warm-gray);
+      max-width: 36ch;
+      font-weight: 300;
+    }
+
+    .hero-cta {
+      margin-top: 3rem;
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--dark);
+      text-decoration: none;
+      border-bottom: 1px solid var(--terracotta);
+      padding-bottom: 0.3rem;
+      transition: opacity 0.2s;
+    }
+
+    .hero-cta:hover { opacity: 0.6; }
+
+    .hero-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .hero-panel {
+      background: var(--light-moss);
+      padding: 2.5rem 2.5rem 2rem;
+    }
+
+    .chairs-illustration {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-quote {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--moss);
+      border-left: 2px solid var(--terracotta);
+      padding-left: 1.5rem;
+      margin: 0;
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 4rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--warm-gray);
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .scroll-hint::after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 1px;
+      background: var(--warm-gray);
+    }
+
+    /* ── OVER ── */
+    #over {
+      padding: 8rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 6rem;
+      align-items: start;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--terracotta);
+      padding-top: 0.5rem;
+    }
+
+    .over-text h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      line-height: 1.25;
+      margin-bottom: 2rem;
+    }
+
+    .over-text h2 em { font-style: italic; color: var(--moss); }
+
+    .over-text p {
+      color: var(--warm-gray);
+      font-size: 1.05rem;
+      max-width: 55ch;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── DIENSTEN ── */
+    #diensten {
+      background: var(--dark);
+      color: var(--cream);
+      padding: 8rem 4rem;
+    }
+
+    .diensten-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 5rem;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .diensten-header h2 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 300;
+    }
+
+    .diensten-header h2 em { font-style: italic; color: var(--light-moss); }
+
+    .diensten-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .dienst {
+      background: #252320;
+      padding: 3.5rem;
+      transition: background 0.3s;
+    }
+
+    .dienst:hover { background: #2e2b27; }
+
+    .dienst-nr {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      color: var(--terracotta);
+      margin-bottom: 2rem;
+    }
+
+    .dienst h3 {
+      font-size: 1.8rem;
+      font-weight: 300;
+      margin-bottom: 1.2rem;
+      line-height: 1.2;
+    }
+
+    .dienst p {
+      font-size: 1rem;
+      color: #a09a90;
+      line-height: 1.7;
+      max-width: 40ch;
+    }
+
+    .dienst-link {
+      display: inline-block;
+      margin-top: 2rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--cream);
+      text-decoration: none;
+      border-bottom: 1px solid var(--terracotta);
+      padding-bottom: 0.2rem;
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .dienst:hover .dienst-link { opacity: 1; transform: translateY(0); }
+
+    /* ── WERKWIJZE ── */
+    #werkwijze {
+      padding: 8rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .werkwijze-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: center;
+    }
+
+    .werkwijze-text h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      line-height: 1.25;
+      margin-bottom: 2rem;
+    }
+
+    .werkwijze-text h2 em { font-style: italic; color: var(--moss); }
+
+    .werkwijze-text p {
+      color: var(--warm-gray);
+      font-size: 1.05rem;
+      margin-bottom: 1.2rem;
+      max-width: 48ch;
+    }
+
+    .kenmerken { display: flex; flex-direction: column; }
+
+    .kenmerk {
+      border-top: 1px solid #ddd8cf;
+      padding: 1.5rem 0;
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .kenmerk:last-child { border-bottom: 1px solid #ddd8cf; }
+
+    .kenmerk-nr {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--terracotta);
+      padding-top: 0.2rem;
+    }
+
+    .kenmerk-text strong { display: block; font-weight: 400; margin-bottom: 0.3rem; }
+    .kenmerk-text span { font-size: 0.95rem; color: var(--warm-gray); }
+
+    /* ── VOOR WIE ── */
+    #voor-wie {
+      background: var(--light-moss);
+      padding: 7rem 4rem;
+      text-align: center;
+    }
+
+    #voor-wie .section-label { text-align: center; margin-bottom: 1.5rem; }
+
+    #voor-wie h2 {
+      font-size: clamp(2rem, 4vw, 3.8rem);
+      font-weight: 300;
+      line-height: 1.2;
+      max-width: 18ch;
+      margin: 0 auto 2.5rem;
+    }
+
+    #voor-wie h2 em { font-style: italic; color: var(--moss); }
+
+    #voor-wie p {
+      color: var(--moss);
+      font-size: 1.1rem;
+      max-width: 70ch;
+      margin: 0 auto;
+    }
+
+    /* ── FAQ ── */
+    #faq {
+      padding: 8rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .faq-inner {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .faq-text h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      line-height: 1.25;
+    }
+
+    .faq-text h2 em { font-style: italic; color: var(--moss); }
+
+    .faq-list { display: flex; flex-direction: column; }
+
+    .faq-item {
+      border-top: 1px solid #ddd8cf;
+      padding: 1.5rem 0;
+    }
+
+    .faq-item:last-child { border-bottom: 1px solid #ddd8cf; }
+
+    .faq-item strong { display: block; font-weight: 400; margin-bottom: 0.4rem; font-size: 1.1rem; }
+    .faq-item span { font-size: 0.95rem; color: var(--warm-gray); }
+
+    .tarieventabel { margin-top: 1rem; border-collapse: collapse; font-size: 0.9rem; }
+    .tarieventabel td { padding: 0.4rem 1.2rem 0.4rem 0; color: var(--warm-gray); border-top: 1px solid #ddd8cf; }
+    .tarieventabel tr:first-child td { border-top: none; }
+    .tarieventabel td:last-child { color: var(--dark); font-family: 'DM Mono', monospace; font-size: 0.8rem; }
+
+    /* ── CONTACT ── */
+    #contact {
+      padding: 8rem 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    .contact-left h2 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-left h2 em { font-style: italic; color: var(--moss); white-space: nowrap; }
+
+    .contact-left p { color: var(--warm-gray); font-size: 1.05rem; max-width: 40ch; }
+
+    .contact-form { display: flex; flex-direction: column; gap: 1.5rem; }
+
+    .field { display: flex; flex-direction: column; gap: 0.4rem; }
+
+    .field label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--warm-gray);
+    }
+
+    .field input, .field textarea {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #c8c2b8;
+      padding: 0.6rem 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      color: var(--dark);
+      outline: none;
+      transition: border-color 0.2s;
+      resize: none;
+    }
+
+    .field input:focus, .field textarea:focus { border-color: var(--terracotta); }
+    .field textarea { min-height: 80px; }
+
+    .submit-btn {
+      align-self: flex-start;
+      margin-top: 0.5rem;
+      background: var(--dark);
+      color: var(--cream);
+      border: none;
+      padding: 1rem 2.5rem;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .submit-btn:hover { background: var(--moss); }
+
+    .visually-hidden { position: absolute; left: -9999px; top: auto; }
+
+    .contact-success {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: var(--moss);
+      margin-top: 1rem;
+    }
+
+    .contact-error {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.75rem;
+      color: var(--terracotta);
+      margin-top: 1rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark);
+      color: #6b655d;
+      padding: 2.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+    }
+
+    footer a { color: #6b655d; text-decoration: none; transition: color 0.2s; }
+    footer a:hover { color: var(--cream); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 1.2rem 2rem; }
+      nav ul { gap: 1.5rem; }
+
+      #hero { padding: 0 2rem 4rem; min-height: 100svh; }
+      .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-left { padding-top: 8rem; }
+      .hero-panel { padding: 1.75rem; }
+
+      #over, #contact { grid-template-columns: 1fr; padding: 5rem 2rem; gap: 3rem; }
+      .diensten-grid { grid-template-columns: 1fr; }
+      #diensten { padding: 5rem 2rem; }
+      .diensten-header { flex-direction: column; gap: 1rem; margin-bottom: 3rem; }
+      .werkwijze-inner { grid-template-columns: 1fr; gap: 3rem; }
+      #werkwijze { padding: 5rem 2rem; }
+      #voor-wie { padding: 5rem 2rem; }
+      .faq-inner { grid-template-columns: 1fr; gap: 3rem; }
+      #faq { padding: 5rem 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="logo">Denkverkenning</a>
+    <ul>
+      <li><a href="#over">Over</a></li>
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <p class="hero-label">{{ site.hero.label }}</p>
+        <h1>{{ site.hero.h1_regel1 }} <em>{{ site.hero.h1_regel2 }}</em></h1>
+        <p class="hero-sub">{{ site.hero.subtekst }}</p>
+        <a href="#diensten" class="hero-cta">Bekijk de mogelijkheden</a>
+      </div>
+      <div class="hero-right">
+        <div class="hero-panel">
+          <picture>
+            <source srcset="/images/stoelen.webp" type="image/webp">
+            <img src="/images/stoelen.png" alt="Twee stoelen" class="chairs-illustration" width="1400" height="1400" loading="eager">
+          </picture>
+          <blockquote class="hero-quote">{{ site.hero.quote }}</blockquote>
+        </div>
+      </div>
+    </div>
+    <span class="scroll-hint">Scroll</span>
+  </section>
+
+  <!-- OVER -->
+  <section id="over">
+    <p class="section-label">Over</p>
+  <div class="over-text">
+      <h2>{{ site.over.kop_deel1 }} <em>{{ site.over.kop_deel2 }}</em>{{ site.over.kop_deel3 }}</h2>
+      <p>{{ site.over.tekst1 }}</p>
+      <p>{{ site.over.tekst2 }}</p>
+      <p class="section-label" style="margin-top: 1rem;">Over mij</p>
+      <p>{{ site.over.tekst3 }}</p>
+    </div>
+  </section>
+
+  <!-- DIENSTEN -->
+  <section id="diensten">
+    <div class="diensten-header">
+      <h2>{{ site.diensten.kop_deel1 }} <em>{{ site.diensten.kop_deel2 }}</em></h2>
+      <p style="color: #6b655d; font-size: 0.95rem; max-width: 30ch;">{{ site.diensten.subtekst }}</p>
+    </div>
+    <div class="diensten-grid">
+
+      <div class="dienst">
+        <p class="dienst-nr">01 / Één-op-één</p>
+        <h3>{{ site.dienst1.titel }}</h3>
+        <p>{{ site.dienst1.tekst }}</p>
+        <p>{{ site.dienst1.tekst2 }}</p>
+        <a href="#contact" class="dienst-link">Neem contact op →</a>
+      </div>
+
+      <div class="dienst">
+        <p class="dienst-nr">02 / Groep</p>
+        <h3>{{ site.dienst2.titel }}</h3>
+        <p>{{ site.dienst2.tekst }}</p>
+        <a href="#contact" class="dienst-link">Plan een oriëntatiegesprek →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WERKWIJZE -->
+  <section id="werkwijze">
+    <div class="werkwijze-inner">
+      <div class="werkwijze-text">
+        <p class="section-label">Werkwijze</p>
+        <h2>{{ site.werkwijze.kop_deel1 }} <em>{{ site.werkwijze.kop_deel2 }}</em>{{ site.werkwijze.kop_deel3 }}</h2>
+        <p>{{ site.werkwijze.tekst }}</p>
+      </div>
+      <div class="kenmerken">
+        {% for kenmerk in site.werkwijze.kenmerken %}
+        <div class="kenmerk">
+          <span class="kenmerk-nr">0{{ loop.index }}</span>
+          <div class="kenmerk-text">
+            <strong>{{ kenmerk.titel }}</strong>
+            <span>{{ kenmerk.beschrijving }}</span>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- VOOR WIE -->
+  <section id="voor-wie">
+    <p class="section-label">Voor wie</p>
+    <h2>{{ site.voor_wie.kop_deel1 }} <em>{{ site.voor_wie.kop_deel2 }}</em> {{ site.voor_wie.kop_deel3 }}</h2>
+    <p>{{ site.voor_wie.tekst }}</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="faq-inner">
+      <div class="faq-text">
+        <p class="section-label">Veelgestelde vragen</p>
+        <h2>{{ site.faq.kop_deel1 }} <em>{{ site.faq.kop_deel2 }}</em></h2>
+      </div>
+      <div class="faq-list">
+        {% for item in site.faq.items %}
+        <div class="faq-item">
+          <strong>{{ item.vraag }}</strong>
+          <span>{{ item.antwoord | safe }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-left">
+      <p class="section-label">Contact</p>
+      <h2>{{ site.contact.kop_deel1 }} <em>{{ site.contact.kop_deel2 }}</em></h2>
+      <p>{{ site.contact.tekst }}</p>
+    </div>
+<form class="contact-form" method="POST" id="contactForm">
+      <div class="field">
+        <label for="naam">Naam</label>
+        <input type="text" id="naam" name="naam" placeholder="Jouw naam">
+      </div>
+      <div class="field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="jouw@email.nl" required>
+      </div>
+      <div class="field">
+        <label for="bericht">Bericht</label>
+        <textarea id="bericht" name="bericht" placeholder="Waar denk je over na?"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Verstuur</button>
+      <p style="font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--warm-gray);">Je gegevens worden alleen gebruikt om te reageren. <a href="/privacy/" style="color: inherit;">Privacy</a></p>
+      <p class="contact-error" id="contactError" style="display:none;">Er ging iets mis bij het versturen. Mail rechtstreeks naar <a href="#" class="obfuscated-email" data-email-rev="{{ site.contact.email | reverse }}">e-mail</a>.</p>
+    </form>
+    <p class="contact-success" id="contactSuccess" style="display:none;">Bedankt, je bericht is verstuurd. Ik reageer zo snel mogelijk.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>© 2026 Denkverkenning</span>
+    <span><a href="#" class="obfuscated-email" data-email-rev="{{ site.contact.email | reverse }}">e-mail</a></span>
+    <span><a href="/privacy/">Privacy</a></span>
+  </footer>
+
+ <script>
+    (function () {
+      var form = document.getElementById('contactForm');
+      var success = document.getElementById('contactSuccess');
+      var error = document.getElementById('contactError');
+      if (!form) return;
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        error.style.display = 'none';
+        fetch('https://formspree.io/f/xpqeeakg', {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        })
+          .then(function (res) {
+            if (!res.ok) throw new Error('Submit failed');
+            form.style.display = 'none';
+            success.style.display = 'block';
+          })
+          .catch(function () {
+            error.style.display = 'block';
+          });
+      });
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var links = document.querySelectorAll('.obfuscated-email');
+      links.forEach(function (link) {
+        var rev = link.getAttribute('data-email-rev');
+        if (!rev) return;
+        var email = rev.split('').reverse().join('');
+        link.setAttribute('href', 'mailto:' + email);
+        link.textContent = email;
+      });
+    })();
+  </script>
+
+</body>
+</html>
