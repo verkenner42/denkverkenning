@@ -10,8 +10,8 @@
   "kop_deel1": "Hoe ik",
   "kop_deel2": "denk",
   "kop_deel3": "",
-  "tekst1": "Ik ben nieuwsgierig naar hoe denken zelf werkt. Ik zie het niet als een probleem dat opgelost moet worden, maar als iets om te onderzoeken. Dat doe ik ook met de mensen die bij me komen.",
-  "tekst2": "Ik stel vragen, niet om ergens naartoe te werken maar om te zien wat er gebeurt als je een gedachte echt volgt. Het gaat niet om wat je eruit haalt, maar om hoe je je verhoudt tot wat er ontstaat.",
+  "tekst1": "Ik ben nieuwsgierig naar hoe denken zelf werkt. Dat is iets om te onderzoeken, ook als het nergens op uitkomt. Die nieuwsgierigheid neem ik mee in de gesprekken die ik voer.",
+  "tekst2": "Ik stel vragen om te zien wat er gebeurt als je een gedachte echt volgt. De aandacht gaat naar hoe je je verhoudt tot wat er ontstaat, terwijl het gaande is.",
   "tekst3": "Ik heb een PhD in de neurowetenschappen en een achtergrond in de filosofie, getraind in het analyseren van complexe systemen. Ik ben me steeds meer bewust van het niet-weten, en nieuwsgierig naar de redenering achter wat een ander denkt."
   },
   "diensten": {
@@ -36,7 +36,7 @@
     "kenmerken": [
       {
         "titel": "Socratisch onderzoek",
-        "beschrijving": "Rigoureus kijken naar je eigen aannames, niet ze valideren."
+        "beschrijving": "Rigoureus kijken naar je eigen aannames: begrijpen hoe ze zijn gevormd en of ze standhouden."
       },
       {
         "titel": "Structuur in complexiteit",
@@ -52,7 +52,25 @@
     "kop_deel1": "Voor wie",
     "kop_deel2": "denkt",
     "kop_deel3": "en toch vastloopt",
-    "tekst": "Voor mensen die vastlopen op een tegenstrijdigheid in zichzelf: ze willen twee dingen tegelijk oprecht, en die zitten elkaar in de weg. Ook voor wie simpelweg wil weten hoe het eigen denken precies werkt. Uit eigen interesse, niet omdat het moet."
+    "tekst": "Voor mensen die vastlopen op een tegenstrijdigheid in zichzelf: ze willen twee dingen tegelijk oprecht, en die zitten elkaar in de weg. Ook voor wie simpelweg wil weten hoe het eigen denken precies werkt, puur uit nieuwsgierigheid."
+  },
+  "gesprek": {
+    "kop_deel1": "Hoe een",
+    "kop_deel2": "gesprek werkt",
+    "blokken": [
+      {
+        "titel": "Wat er in een gesprek gebeurt",
+        "tekst": "Een gesprek begint bij iets wat je al denkt, maar nog niet scherp ziet. In de loop van het gesprek kijk je daar samen naar: wat is de redenering eronder, waar klopt die, waar hapert ze. Soms verschuift er iets. Soms merk je pas na het gesprek dat er een aanname was die je voor vanzelfsprekend hield."
+      },
+      {
+        "titel": "Wat het verschil is met coaching",
+        "tekst": "Coaching is doelgericht en oplossingsgericht. Een filosofisch gesprek is onderzoekend: het gaat om hoe je denkt, om de structuur van je redenering en waar die wringt. De richting staat van tevoren open."
+      },
+      {
+        "titel": "Je hoeft nog geen vraag te hebben",
+        "tekst": "De meeste mensen beginnen met iets vaags waar ze mee zitten. Dat is precies genoeg om te beginnen. In het gesprek wordt scherper wat er eigenlijk speelt."
+      }
+    ]
   },
   "faq": {
     "kop_deel1": "Veelgestelde",
@@ -64,7 +82,7 @@
       },
       {
         "vraag": "Wat kost een gesprek?",
-        "antwoord": "Dat bespreken we in een gratis kennismaking van 15 minuten, telefonisch of online. Zo kunnen we afstemmen op wat je zoekt en wat passend is."
+        "antwoord": "Tarieven bespreek ik persoonlijk, afgestemd op de situatie. Stuur een bericht via het contactformulier."
       },
       {
         "vraag": "Waar vinden de gesprekken plaats?",

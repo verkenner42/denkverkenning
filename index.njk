@@ -35,7 +35,7 @@ permalink: /index.html
     {
       "@type": "Question",
       "name": "Wat kost een gesprek?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Dat bespreken we in een gratis kennismaking van 15 minuten, telefonisch of online. Zo kunnen we afstemmen op wat je zoekt en wat passend is." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Tarieven bespreek ik persoonlijk, afgestemd op de situatie. Stuur een bericht via het contactformulier." }
     },
     {
       "@type": "Question",
@@ -429,6 +429,52 @@ permalink: /index.html
       margin: 0 auto;
     }
 
+    /* ── GESPREK ── */
+    #gesprek {
+      padding: 8rem 4rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gesprek-header {
+      margin-bottom: 4rem;
+    }
+
+    .gesprek-header h2 {
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      font-weight: 300;
+      line-height: 1.25;
+    }
+
+    .gesprek-header h2 em { font-style: italic; color: var(--moss); }
+
+    .gesprek-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3rem;
+    }
+
+    .gesprek-blok {
+      border-top: 1px solid #ddd8cf;
+      padding-top: 1.5rem;
+    }
+
+    .gesprek-blok h3 {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--warm-gray);
+      margin-bottom: 0.9rem;
+      font-weight: 400;
+    }
+
+    .gesprek-blok p {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: var(--dark);
+    }
+
     /* ── FAQ ── */
     #faq {
       padding: 8rem 4rem;
@@ -617,6 +663,8 @@ permalink: /index.html
       .werkwijze-inner { grid-template-columns: 1fr; gap: 3rem; }
       #werkwijze { padding: 5rem 2rem; }
       #voor-wie { padding: 5rem 2rem; }
+      .gesprek-grid { grid-template-columns: 1fr; gap: 2rem; }
+      #gesprek { padding: 5rem 2rem; }
       .faq-inner { grid-template-columns: 1fr; gap: 3rem; }
       #faq { padding: 5rem 2rem; }
     }
@@ -722,6 +770,22 @@ permalink: /index.html
     <p class="section-label">Voor wie</p>
     <h2>{{ site.voor_wie.kop_deel1 }} <em>{{ site.voor_wie.kop_deel2 }}</em> {{ site.voor_wie.kop_deel3 }}</h2>
     <p>{{ site.voor_wie.tekst }}</p>
+  </section>
+
+  <!-- GESPREK -->
+  <section id="gesprek">
+    <div class="gesprek-header">
+      <p class="section-label">Het gesprek</p>
+      <h2>{{ site.gesprek.kop_deel1 }} <em>{{ site.gesprek.kop_deel2 }}</em></h2>
+    </div>
+    <div class="gesprek-grid">
+      {% for blok in site.gesprek.blokken %}
+      <div class="gesprek-blok">
+        <h3>{{ blok.titel }}</h3>
+        <p>{{ blok.tekst }}</p>
+      </div>
+      {% endfor %}
+    </div>
   </section>
 
   <!-- FAQ -->

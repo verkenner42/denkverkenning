@@ -14,6 +14,8 @@ Diepgang komt uit precisie en vakinhoud (PhD neurowetenschappen, achtergrond fil
 
 Ritme via korte zinnen. Geen "Geen X, wel Y"-constructie (of "Niet X, maar Y") als terugkerend patroon binnen één zin — leest als AI-geschreven tekst, vooral zodra de zin langer wordt dan een kort, herkenbaar ritme. Contrast ontstaat uit concrete inhoud en zinsvolgorde (positieve bewering eerst, ontkenning eventueel kort erachteraan), niet uit een herhaalde ontkenning-plus-omkering-formule. Eerlijk over niet-weten, geen pasklare antwoorden, geen valse zekerheid. Kernonderscheid: expliciet "geen therapie", vergeleken met een personal trainer voor je geest (trainen, niet genezen).
 
+Vermijd ook zinsconstructies met "Niet om..." en "Niet bij..." als opener — zelfde patroon, zelfde AI-effect. Zinnen moeten logisch op elkaar aansluiten en een interne verbinding hebben; geen losse observaties naast elkaar zetten die elk een andere kant op wijzen.
+
 Stijlregel: geen em-dashes.
 
 ## Doelgroep (besloten)
